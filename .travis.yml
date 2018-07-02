@@ -8,4 +8,7 @@ before_install:
  
 script: 
  - docker build -t infrastructor/ubuntu-sshd:0.0.2 . 
+ - docker tag infrastructor/ubuntu-sshd infrastructor/ubuntu-sshd:0.0.2
+ - docker tag infrastructor/ubuntu-sshd infrastructor/ubuntu-sshd:latest
  - docker push infrastructor/ubuntu-sshd:0.0.2
+ - docker push infrastructor/ubuntu-sshd:latest
