@@ -7,5 +7,5 @@ before_install:
  - docker login --username=$U --password=$P --email=$E
  
 script: 
- - docker build -t infrastructor/ubuntu-sshd . 
- - docker push infrastructor/ubuntu-sshd
+ - docker build -t infrastructor/ubuntu-sshd:0.0.2 . 
+ - docker push infrastructor/ubuntu-sshd:0.0.2
