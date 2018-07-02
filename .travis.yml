@@ -4,7 +4,7 @@ services:
   - docker
   
 before_install:
- - docker login --username=$U --password=$P --email=$E
+ - docker login --username=$U --password=$P
  
 script: 
  - docker build -t infrastructor/ubuntu-sshd:0.0.2 . 
